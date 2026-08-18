@@ -2,3 +2,17 @@
 This is the unblocked version of DevTools on school Chromebooks!
 
 <img width="1230" height="848" alt="Gemini_Generated_Image_83y2zp83y2zp83y2" src="https://github.com/user-attachments/assets/a9d8a599-3d6f-46b8-ae5f-adb78ccbb164" />
+
+# DevTools Unblocker Overlay
+
+A client-side developer overlay designed to bypass site restrictions and shortcut blocks.
+
+## Features
+- In-page Console, DOM Inspector, Network tab, and Code Editor.
+- Bypasses disabled right-click (`contextmenu`) and inspect key commands (`F12`, `Ctrl+Shift+I`).
+
+## Installation
+1. Clone or download this directory.
+2. Navigate to `chrome://extensions/` in your browser.
+3. Turn on **Developer mode** (top right).
+4. Click **Load unpacked** and select the root `devtools-unblocker` folder.
