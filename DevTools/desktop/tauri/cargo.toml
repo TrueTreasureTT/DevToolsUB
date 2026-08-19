@@ -1,0 +1,14 @@
+[package]
+name = "devtools_unblocker_tauri"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "devtools_unblocker_tauri_lib"
+crate-type = ["cdylib", "rlib", "staticlib"]
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
