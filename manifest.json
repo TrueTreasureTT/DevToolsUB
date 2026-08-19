@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "DevTools Overlay",
+  "version": "1.0.0",
+  "description": "A local developer overlay for inspecting and debugging pages you control.",
+  "icons": {
+    "128": "public/icon128.png"
+  },
+  "action": {
+    "default_title": "Open DevTools Overlay",
+    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "service_worker": "extension/background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "https://localhost/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "https://localhost/*"
+      ],
+      "js": [
+        "extension/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["extension/inject.js"],
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "https://localhost/*"
+      ]
+    }
+  ]
+}
