@@ -16,3 +16,6 @@ A client-side developer overlay designed to bypass site restrictions and shortcu
 2. Navigate to `chrome://extensions/` in your browser.
 3. Turn on **Developer mode** (top right).
 4. Click **Load unpacked** and select the root `devtools-unblocker` folder.
+
+## Languages
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
