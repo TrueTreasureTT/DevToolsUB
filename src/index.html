@@ -1,0 +1,213 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome DevTools Replica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="devtools">
+    <!-- Top Action Banner Bar -->
+    <header class="top-bar">
+      <div class="nav-left">
+        <button class="icon-btn highlight" title="Select Element">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M1.5 1.5l5 13 2.5-5 5-2.5z"/>
+          </svg>
+        </button>
+        <button class="icon-btn" title="Toggle Device Toolbar">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4 1h8a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V2a1 1 0 011-1zm1 2v10h6V3H5z"/>
+          </svg>
+        </button>
+        <div class="divider"></div>
+        <nav class="tabs">
+          <button class="tab active" data-tab="elements">Elements</button>
+          <button class="tab" data-tab="recorder">Recorder</button>
+          <button class="tab" data-tab="console">Console</button>
+          <button class="tab" data-tab="sources">Sources</button>
+          <button class="tab" data-tab="network">Network</button>
+          <button class="tab" data-tab="performance">Performance</button>
+          <button class="tab" data-tab="memory">Memory</button>
+          <button class="tab" data-tab="application">Application</button>
+          <button class="tab" data-tab="security">Security</button>
+          <button class="tab icon-tab">&raquo;</button>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="status-counts">
+          <span class="badge error">
+            <svg width="10" height="10" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="#d93025"/></svg>
+            17
+          </span>
+          <span class="badge warning">
+            <svg width="10" height="10" viewBox="0 0 12 12"><path d="M6 1L11 11H1Z" fill="#f29900"/></svg>
+            121
+          </span>
+          <span class="badge info">
+            <svg width="10" height="10" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="#1a73e8"/></svg>
+            1
+          </span>
+        </div>
+        <div class="divider"></div>
+        <button class="icon-btn">⚙</button>
+        <button class="icon-btn">⋮</button>
+        <button class="icon-btn">✕</button>
+      </div>
+    </header>
+
+    <!-- Main Content Area Split Panel -->
+    <main class="main-split">
+      <!-- Left Panel: DOM Tree Editor -->
+      <section class="panel-left">
+        <div class="code-line">&lt;!DOCTYPE html&gt;</div>
+        <div class="code-line">&lt;<span class="tag">html</span> <span class="attr">lang</span>=<span class="val">"en"</span> <span class="attr">class</span>=<span class="val">"detznojg idc0_343"</span> <span class="attr">data-rh</span>=<span class="val">"lang"</span>&gt;</div>
+        
+        <div class="code-block indent-1">
+          <span class="toggle">►</span>
+          &lt;<span class="tag">head</span>&gt;...&lt/<span class="tag">head</span>&gt;
+        </div>
+
+        <div class="code-block indent-1 open">
+          <span class="toggle">▼</span>
+          &lt;<span class="tag">body</span> <span class="attr">cz-shortcut-listen</span>=<span class="val">"true"</span>&gt; <span class="target-pointer">== $0</span>
+        </div>
+
+        <div class="code-block indent-2">
+          <span class="toggle">►</span>
+          &lt;<span class="tag">div</span> <span class="attr">id</span>=<span class="val">"root"</span>&gt;...&lt/<span class="tag">div</span>&gt;
+        </div>
+
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span>&gt;<span class="var">window</span>.__BUILD_ID__ = <span class="val">"main-20240928-000114-bdf84e4801"</span>&lt;/<span class="tag">script</span>&gt;
+        </div>
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span>&gt;<span class="var">window</span>.__GRAPHQL_URI__ = <span class="val">"https://medium.com/_/graphql"</span>&lt;/<span class="tag">script</span>&gt;
+        </div>
+
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"https://cdn-client.medium.com/lite/static/js/manifest.6b344d73.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+        </div>
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"https://cdn-client.medium.com/lite/static/js/9865.1496d74a.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+        </div>
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"https://cdn-client.medium.com/lite/static/js/main.51d4b649.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+        </div>
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="val">"https://cdn-client.medium.com/lite/static/js/HomePage.MainContent.e2738a39.chunk.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+        </div>
+        <div class="code-line indent-2">
+          &lt;<span class="tag">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="val">"https://static.cloudflareinsights.com/beacon.min.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+        </div>
+
+        <div class="code-block indent-1">
+          &lt;/<span class="tag">body</span>&gt;
+        </div>
+        <div class="code-line">&lt;/<span class="tag">html</span>&gt;
+      </section>
+
+      <!-- Right Panel: CSS Styles & Layout -->
+      <section class="panel-right">
+        <!-- Sub Tabs -->
+        <div class="sub-tabs-bar">
+          <button class="sub-tab active">Styles</button>
+          <button class="sub-tab">Computed</button>
+          <button class="sub-tab">Layout</button>
+          <button class="sub-tab">Event Listeners</button>
+          <button class="sub-tab icon-tab">&raquo;</button>
+        </div>
+
+        <!-- Filter Sub-Banner -->
+        <div class="filter-bar">
+          <input type="text" placeholder="Filter" class="filter-input" />
+          <div class="filter-actions">
+            <span class="action-btn">:hov</span>
+            <span class="action-btn">.cls</span>
+            <span class="action-btn">+</span>
+            <span class="action-btn">🎨</span>
+          </div>
+        </div>
+
+        <!-- CSS Inspector Contents -->
+        <div class="css-inspector">
+          <div class="css-rule">
+            <span class="selector">element.style</span> {
+            <div class="rule-body">}</div>
+          </div>
+
+          <div class="css-rule">
+            <div class="rule-header">
+              <span class="selector">body</span> {
+              <span class="source-link">(index):1</span>
+            </div>
+            <div class="rule-body">
+              <div class="prop"><span class="prop-name">margin</span>: <span class="prop-val">0</span>;</div>
+              <div class="prop"><span class="prop-name">padding</span>: <span class="prop-val">0</span>;</div>
+              <div class="prop"><span class="prop-name">text-rendering</span>: <span class="prop-val">optimizeLegibility</span>;</div>
+              <div class="prop"><span class="prop-name">-webkit-font-smoothing</span>: <span class="prop-val">antialiased</span>;</div>
+              <div class="prop"><span class="prop-name">color</span>: <span class="prop-val">rgba(0, 0, 0, 0.8)</span>;</div>
+              <div class="prop"><span class="prop-name">position</span>: <span class="prop-val">relative</span>;</div>
+              <div class="prop"><span class="prop-name">min-height</span>: <span class="prop-val">100vh</span>;</div>
+            </div>
+            }
+          </div>
+
+          <div class="css-rule">
+            <div class="rule-header">
+              <span class="selector">*, *:before, *:after</span> {
+              <span class="source-link">(index):1</span>
+            </div>
+            <div class="rule-body">
+              <div class="prop"><span class="prop-name">box-sizing</span>: <span class="prop-val">inherit</span>;</div>
+            </div>
+            }
+          </div>
+
+          <div class="css-rule">
+            <div class="rule-header">
+              <span class="selector">body</span> <span class="user-agent">user agent stylesheet</span> {
+            </div>
+            <div class="rule-body">
+              <div class="prop"><span class="prop-name">display</span>: <span class="prop-val">block</span>;</div>
+              <div class="prop strike"><span class="prop-name">margin</span>: <span class="prop-val">8px</span>;</div>
+            </div>
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Far Right Box Model Diagram -->
+      <aside class="panel-box-model">
+        <div class="box-model-container">
+          <div class="box-margin">
+            <span class="label">margin</span>
+            <div class="box-border">
+              <span class="label">border</span>
+              <div class="box-padding">
+                <span class="label">padding</span>
+                <div class="box-content">1674 × 5006</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="computed-props">
+          <div class="comp-row"><span class="toggle">►</span> <b>box-sizing</b>: border-box</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>color</b>: rgba(0, 0, 0, 0.8)</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>display</b>: block</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>height</b>: 5006px</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>margin-bottom</b>: 0px</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>margin-left</b>: 0px</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>margin-right</b>: 0px</div>
+          <div class="comp-row"><span class="toggle">►</span> <b>margin-top</b>: 0px</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script type="module" src="main.ts"></script>
+</body>
+</html>
